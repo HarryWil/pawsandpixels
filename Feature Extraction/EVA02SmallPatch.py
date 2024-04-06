@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 
 (ds_test, ds_val, ds_train), ds_info = tfds.load('stanford_dogs', split= ["test[0%:50%]", "test[50%:]", "train"], shuffle_files=False, data_dir='tensorflow_datasets/', as_supervised=True, with_info=True)
 
-image_size = (384, 384)
+image_size = (336, 336)
 batch_size = 32
 
 def normalize_img(image, label):

@@ -18,7 +18,6 @@ import matplotlib.pyplot as plt
 image_size = (384, 384)
 batch_size = 32
 
-
 def normalize_img(image, label):
   image = tf.cast(image, tf.float32)
   image = tf.image.resize(image, image_size, method='nearest')

@@ -48,7 +48,6 @@ base_model = eva02.EVA02SmallPatch14(num_classes=0, input_shape=(336, 336, 3))
 base_model.trainable = False
 x = base_model.output
 x = Dropout(0.5)(x)
-x = GlobalAveragePooling2D()(x)
 x = Dense(1024)(x)
 
 predictions = Dense(120, activation='softmax', kernel_initializer='random_uniform', bias_initializer='zeros')(x)

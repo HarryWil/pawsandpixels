@@ -10,7 +10,6 @@ from keras.optimizers import SGD, Adam
 from keras.utils import plot_model
 from keras.layers import GlobalAveragePooling2D, BatchNormalization, Dense, Dropout, Flatten
 from keras.models import Model
-from kecam import efficientnet
 from keras_cv_attention_models import eva02
 import matplotlib.pyplot as plt
 

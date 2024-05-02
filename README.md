@@ -6,7 +6,7 @@ This repository documents the code and models developed in support of the submit
 #### pawsandpixels
 - Contains the source code used to build the mobile application
 #### apk
-- Contains three .apk files, which can be used to download the application to a smart phone. Each .apk relates to a different Android processor, so please check which is compatible.
+- Contains three .apk files, which can be used to download the application to a smart phone. Each .apk relates to a different Android processor, so please check which is compatible for your device
 #### tensorflow_datasets/stanford_dogs
 - Contains the Stanford Dogs dataset, as loaded by the tfds library
 #### Feature Extraction Code

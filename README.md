@@ -34,7 +34,7 @@ Contains two subdirectories for each model, with each one containing the followi
 - Contains two .keras files used for the fine-tuning process
 - Contains labels.txt, a text file for all 120 classes
 - Contains test_images.zip, the twenty test images used for performance comparison between existing applications
-- Contains Dataset_Analysis.ipynb, used to show class distributions and see example images
+- Contains Dataset_Analysis.ipynb, used to show class distributions and see example images from the tfds dataset
 
 ## Dependencies
 All dependencies are imported in .py files.

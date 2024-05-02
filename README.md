@@ -35,3 +35,12 @@ Contains two subdirectories for each model, with each one containing the followi
 - Contains labels.txt, a text file for all 120 classes
 - Contains test_images.zip, the twenty test images used for performance comparison between existing applications
 - Contains Dataset_Analysis.ipynb, used to show class distributions and see example images
+
+## Dependencies
+All dependencies are imported in .py files.
+However, some libaries may require installation through pip. The versions used are listed below:
+- Tensorflow v2.11
+- kecam v1.3.25
+- keras_cv v0.5.0
+- tensorflow_datasets v4.9.0
+- matplotlib v3.5.2

@@ -1,0 +1,147 @@
+{
+  "citation": "@inproceedings{KhoslaYaoJayadevaprakashFeiFei_FGVC2011,\nauthor = \"Aditya Khosla and Nityananda Jayadevaprakash and Bangpeng Yao and\n          Li Fei-Fei\",\ntitle = \"Novel Dataset for Fine-Grained Image Categorization\",\nbooktitle = \"First Workshop on Fine-Grained Visual Categorization,\n             IEEE Conference on Computer Vision and Pattern Recognition\",\nyear = \"2011\",\nmonth = \"June\",\naddress = \"Colorado Springs, CO\",\n}\n@inproceedings{imagenet_cvpr09,\n        AUTHOR = {Deng, J. and Dong, W. and Socher, R. and Li, L.-J. and\n                  Li, K. and Fei-Fei, L.},\n        TITLE = {{ImageNet: A Large-Scale Hierarchical Image Database}},\n        BOOKTITLE = {CVPR09},\n        YEAR = {2009},\n        BIBSOURCE = \"http://www.image-net.org/papers/imagenet_cvpr09.bib\"}",
+  "description": "The Stanford Dogs dataset contains images of 120 breeds of dogs from around the\nworld. This dataset has been built using images and annotation from ImageNet for\nthe task of fine-grained image categorization. There are 20,580 images, out of\nwhich 12,000 are used for training and 8580 for testing. Class labels and\nbounding box annotations are provided for all the 12,000 images.",
+  "downloadSize": "815912960",
+  "fileFormat": "tfrecord",
+  "location": {
+    "urls": [
+      "http://vision.stanford.edu/aditya86/ImageNetDogs/main.html"
+    ]
+  },
+  "moduleName": "tensorflow_datasets.datasets.stanford_dogs.stanford_dogs_dataset_builder",
+  "name": "stanford_dogs",
+  "schema": {
+    "feature": [
+      {
+        "name": "image",
+        "shape": {
+          "dim": [
+            {
+              "size": "-1"
+            },
+            {
+              "size": "-1"
+            },
+            {
+              "size": "3"
+            }
+          ]
+        },
+        "type": "INT"
+      },
+      {
+        "name": "image/filename",
+        "type": "BYTES"
+      },
+      {
+        "name": "label",
+        "type": "INT"
+      },
+      {
+        "name": "objects"
+      }
+    ]
+  },
+  "sizeInBytes": "815912960",
+  "splits": [
+    {
+      "filepathTemplate": "{DATASET}-{SPLIT}.{FILEFORMAT}-{SHARD_X_OF_Y}",
+      "name": "train",
+      "numBytes": "458077367",
+      "shardLengths": [
+        "3000",
+        "3000",
+        "3000",
+        "3000"
+      ],
+      "statistics": {
+        "features": [
+          {
+            "name": "image",
+            "numStats": {
+              "commonStats": {
+                "numNonMissing": "12000"
+              },
+              "max": 255.0
+            }
+          },
+          {
+            "bytesStats": {
+              "commonStats": {
+                "numNonMissing": "12000"
+              }
+            },
+            "name": "image/filename",
+            "type": "BYTES"
+          },
+          {
+            "name": "label",
+            "numStats": {
+              "commonStats": {
+                "numNonMissing": "12000"
+              },
+              "max": 119.0
+            }
+          }
+        ],
+        "numExamples": "12000"
+      }
+    },
+    {
+      "filepathTemplate": "{DATASET}-{SPLIT}.{FILEFORMAT}-{SHARD_X_OF_Y}",
+      "name": "test",
+      "numBytes": "322813870",
+      "shardLengths": [
+        "2145",
+        "2145",
+        "2145",
+        "2145"
+      ],
+      "statistics": {
+        "features": [
+          {
+            "name": "image",
+            "numStats": {
+              "commonStats": {
+                "numNonMissing": "8580"
+              },
+              "max": 255.0
+            }
+          },
+          {
+            "bytesStats": {
+              "commonStats": {
+                "numNonMissing": "8580"
+              }
+            },
+            "name": "image/filename",
+            "type": "BYTES"
+          },
+          {
+            "name": "label",
+            "numStats": {
+              "commonStats": {
+                "numNonMissing": "8580"
+              },
+              "max": 119.0
+            }
+          }
+        ],
+        "numExamples": "8580"
+      }
+    }
+  ],
+  "supervisedKeys": {
+    "tuple": {
+      "items": [
+        {
+          "featureKey": "image"
+        },
+        {
+          "featureKey": "label"
+        }
+      ]
+    }
+  },
+  "version": "0.2.0"
+}

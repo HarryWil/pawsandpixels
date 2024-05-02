@@ -1,3 +1,7 @@
 *.psd filter=lfs diff=lfs merge=lfs -text
 *.tflite filter=lfs diff=lfs merge=lfs -text
 *.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+*.tfrecord-00000-of-00004 filter=lfs diff=lfs merge=lfs -text
+*.tfrecord-00001-of-00004 filter=lfs diff=lfs merge=lfs -text
+*.tfrecord-00002-of-00004 filter=lfs diff=lfs merge=lfs -text
+*.tfrecord-00003-of-00004 filter=lfs diff=lfs merge=lfs -text

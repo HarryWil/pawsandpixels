@@ -37,6 +37,15 @@ Contains two subdirectories for each model, with each one containing the followi
 - Contains test_images.ipynb, code to randomly generate 20 images from test set
 - Contains Dataset_Analysis.ipynb, used to show class distributions and see example images from the tfds dataset
 
+## Instructions to run code
+- Ensure all dependencies below are installed
+- All code is present in .py files or.ipynb files.
+- .py files may be directly imported using Python, but the files can be opened and the code copied/pasted into a console. All required imports are stated in the code.
+- For GPU access, use of the GPU Cloud, Hex, is available for students and staff at the University of Bath. For instructions on setting this up, please use the following link:
+  https://hex.cs.bath.ac.uk/wiki
+- Limited GPU access is also available for free using Google Colab (easier option)
+ 
+
 ## Dependencies
 All dependencies are imported in .py files.
 However, some libaries may require installation through pip. The versions used are listed below:
